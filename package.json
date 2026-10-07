@@ -1,0 +1,13 @@
+{
+  "name": "recall-courier",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Claude plugin that controls the Anki desktop app through the AnkiConnect add-on.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:e2e": "node test/e2e.mjs"
+  }
+}
