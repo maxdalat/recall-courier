@@ -6,7 +6,7 @@ Choices made while building Recall Courier, in the order they came up. Where the
 
 - **`recall-courier`**, display name **Recall Courier for Anki**. Searched GitHub and npm: dozens of `anki-mcp*` repositories exist, so the name avoids "anki" and "mcp". Nothing named `recall-courier` was found on GitHub or npm. The directory's own name list cannot be queried before submitting, so uniqueness there is unverified.
 - "for Anki" appears only in the display name and descriptions, as a statement of compatibility, next to an explicit "unofficial, not affiliated with Anki or Ankitects" notice in the manifest description, README and privacy policy. The directory may still hold it for a brand-name review; see SUBMISSION.md.
-- Author is `Maxim Dalat` with `https://github.com/maxdalat` (from `gh api user`); no email appears anywhere in the repository.
+- Author is `Maxim Dalat` with `https://github.com/maxdalat` (from `gh api user`); no email appears in any file. Commits in this repository use the GitHub noreply address (`63883235+maxdalat@users.noreply.github.com`) rather than the personal email in the global git configuration, because commit authorship is public.
 
 ## Conflicts between the brief and the docs (docs won)
 

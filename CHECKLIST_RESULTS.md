@@ -114,9 +114,10 @@ These criteria are written for remote connectors, but the plugin's tools were he
 | No money movement or AI media generation | OK | Neither exists. |
 | Public documentation | OK | README, PRIVACY.md. |
 
-## Needs a check after publishing
+## Checked after publishing
 
 | Item | Status |
 | - | - |
-| `PRIVACY.md` loads at `https://github.com/maxdalat/recall-courier/blob/main/PRIVACY.md` | Checked after the push; result recorded in the release notes and the final summary. |
-| `/plugin marketplace add maxdalat/recall-courier` from GitHub | Install from the local copy was tested; the GitHub path is untested until the repository is public. |
+| `PRIVACY.md` loads at `https://github.com/maxdalat/recall-courier/blob/main/PRIVACY.md` | OK: HTTP 200 and the policy text is served (also 200 at the raw URL). |
+| `/plugin marketplace add maxdalat/recall-courier` from GitHub | OK: in an isolated Claude Code config, `claude plugin marketplace add maxdalat/recall-courier` and `claude plugin install recall-courier@recall-courier` succeeded and `claude mcp list` showed the `anki` server connected. |
+| Fresh clone of the public repository | OK: all 91 tests pass and `claude plugin validate` passes with the four expected warnings. |
