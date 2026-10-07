@@ -1,0 +1,41 @@
+name: Bug report
+description: Something does not work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please do not paste card content you consider private.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: The exact error text Claude showed, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What you asked Claude to do, and which tool was used if you know.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [macOS, Windows, Linux, Linux (Flatpak Anki)]
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Anki, AnkiConnect, Node.js and Claude Code versions
+      placeholder: "Anki 25.02, AnkiConnect 6, Node 20, Claude Code 2.1"

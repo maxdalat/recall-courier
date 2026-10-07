@@ -1,0 +1,17 @@
+name: Feature request
+description: Suggest an improvement or a new tool
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you want to do with Anki that is hard today?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like the plugin to do?
+      description: If it needs an AnkiConnect action, name it (see the AnkiConnect docs).
+    validations:
+      required: true
