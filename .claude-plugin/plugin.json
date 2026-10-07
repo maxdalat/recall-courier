@@ -1,0 +1,39 @@
+{
+  "name": "recall-courier",
+  "displayName": "Recall Courier for Anki",
+  "version": "0.1.0",
+  "description": "Unofficial plugin that lets Claude control the Anki desktop app on your own computer through the AnkiConnect add-on: add cards, manage decks, find and edit notes, and more. Not affiliated with Anki or Ankitects.",
+  "author": {
+    "name": "Maxim Dalat",
+    "url": "https://github.com/maxdalat"
+  },
+  "homepage": "https://github.com/maxdalat/recall-courier#readme",
+  "repository": "https://github.com/maxdalat/recall-courier",
+  "license": "MIT",
+  "keywords": ["anki", "flashcards", "spaced-repetition", "study", "ankiconnect", "mcp", "claude-plugin"],
+  "icon": "./icon.svg",
+  "documentationUrl": "https://github.com/maxdalat/recall-courier#readme",
+  "supportUrl": "https://github.com/maxdalat/recall-courier/issues",
+  "privacyPolicyUrl": "https://github.com/maxdalat/recall-courier/blob/main/PRIVACY.md",
+  "userConfig": {
+    "anki_connect_url": {
+      "type": "string",
+      "title": "AnkiConnect URL",
+      "description": "Where the AnkiConnect add-on listens on this computer. Leave the default unless you changed webBindPort in AnkiConnect's settings. Only localhost addresses are accepted.",
+      "default": "http://127.0.0.1:8765"
+    },
+    "anki_connect_api_key": {
+      "type": "string",
+      "title": "AnkiConnect API key (optional)",
+      "description": "Only needed if you set an apiKey in Anki under Tools > Add-ons > AnkiConnect > Config. Leave empty otherwise.",
+      "sensitive": true,
+      "default": ""
+    },
+    "auto_launch": {
+      "type": "boolean",
+      "title": "Start Anki automatically",
+      "description": "Let the plugin launch the Anki app when it is not running. Turn off if you prefer to open Anki yourself.",
+      "default": true
+    }
+  }
+}

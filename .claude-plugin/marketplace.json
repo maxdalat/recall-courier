@@ -1,0 +1,17 @@
+{
+  "name": "recall-courier",
+  "owner": {
+    "name": "Maxim Dalat",
+    "url": "https://github.com/maxdalat"
+  },
+  "description": "Recall Courier for Anki: an unofficial plugin that lets Claude control the Anki desktop app on your computer.",
+  "plugins": [
+    {
+      "name": "recall-courier",
+      "source": "./",
+      "description": "Let Claude add cards, organize decks, and find and edit notes in your local Anki app through AnkiConnect. Unofficial; not affiliated with Anki or Ankitects.",
+      "category": "education",
+      "tags": ["anki", "flashcards", "study"]
+    }
+  ]
+}
